@@ -284,3 +284,85 @@ hr{
     width: 375px;
     object-fit: cover;
 }
+
+#footer{
+    background: #efefef;
+    position: relative;
+    padding-top: 20px;
+    font-family: "roboto";
+}
+
+.cut-symbol{
+    display: flex;
+    justify-content: center;
+    color:red;
+    font-size: 20px;
+}
+
+.title-text-4{
+    text-align: center;
+}
+
+.title-text-4 p{
+    margin: auto;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text-4 h1{
+    font-size: 25px;
+}
+
+.footer1{
+    text-align: center
+}
+
+.footer1 h1{
+    font-size: 25px;
+}
+
+.footer1 .fas{
+    color: red;
+}
+
+
+.footer2{
+    text-align: center
+}
+
+.footer2 h1{
+    font-size: 25px;
+}
+
+.footer2 .fas{
+    color: red;
+}
+
+.social-links{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    
+}
+
+.social-links .fab{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    border: 1px solid red;
+    margin: 40px 5px 0;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-links .fab:hover{
+    background: red;
+    color: #fff;
+    transform: translateY(-7px);
+}
