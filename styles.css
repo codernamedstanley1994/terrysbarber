@@ -2,6 +2,50 @@ html{
     scroll-behavior: smooth;
 }
 
+.loader{
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    top: 470px;
+    left: 130px;
+}
+
+.loader img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: 150px;
+    transform: scaleX(0.5);
+    animation: spin-logo 3s 1.5s;
+    opacity: 0;
+}
+
+@keyframes spin-logo {
+    0% {
+      transform: scaleX(0);
+      opacity: 0.1;
+    }
+    17% {
+      transform: scaleX(0.18);
+    }
+    24% {
+      transform: scaleX(0.4);
+    }
+    46% {
+      transform: scaleX(0.81);
+    }
+    85%,
+    100% {
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  
+
 body{
     display: flex;
     justify-content: center;
@@ -9,6 +53,25 @@ body{
 
 .main-container{
 width: 375px;
+animation: fade 6s ease-out;
+}
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
 .logo-container{
@@ -235,7 +298,6 @@ left: 35%;
 .overlay{
     width: 100%;
     height: 98.9%;
-    
     position: absolute;
     top: 0;
     border-radius: 7px;
@@ -370,7 +432,12 @@ hr{
 }
 
 @media only screen and (min-width: 1280px) {
-.main-container{
+.loader{
+    top: 180px;
+    left: 600px;
+}
+
+    .main-container{
     width: 100%;
 }
 
