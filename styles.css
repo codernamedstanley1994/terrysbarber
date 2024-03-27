@@ -15,7 +15,7 @@ html{
     justify-content: center;
     align-items: center;
     height: 170px;
-    width: 150px;
+    width: 130px;
     transform: scaleX(0.5);
     animation: spin-logo 3s 1.5s;
     opacity: 0;
